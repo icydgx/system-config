@@ -1,7 +1,7 @@
 (require 'gnus-cite)
 (setq gnus-invalid-group-regexp "[:`'\"]\\|^$")
 (setq
- user-full-name "Haojun Bao" ; fixme
+ user-full-name "Ted Cruz" ; fixme
  nnml-directory "~/private/mail/"
  message-default-charset 'utf-8
  gnus-signature-limit 500

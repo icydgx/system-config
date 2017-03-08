@@ -45,12 +45,12 @@ fi
 
 if test $host = cpan; then
     url="http://search.cpan.org/search?mode=all&query=$fill"
-    exec firefox-open-url-pattern "http://search.cpan.org" "$url"
+    exec google-chrome-open-url-pattern "http://search.cpan.org" "$url"
 fi
 
 if test $host = msdn-lucky; then
     url="https://www.google.co.uk/search?btnI=1&q=site%3Amsdn.microsoft.com+$fill"
-    exec firefox-open-url-pattern "http://msdn.microsoft.com" "$url"
+    exec google-chrome-open-url-pattern "http://msdn.microsoft.com" "$url"
 fi
 
 if [[ $host =~ baidu ]]; then
@@ -130,6 +130,11 @@ elif test "$prog" = search-jenkins-search; then
     url="http://build1:8080/search/?q=$fill"
 fi
 
+if test "$prog" = search-cg; then
+    url="http://dict.cn/$fill"
+fi
+
+
 set -x
 
 if test "$BHJ_URLIFY" = true; then
@@ -138,9 +143,9 @@ if test "$BHJ_URLIFY" = true; then
 fi
 
 if test "$pat"; then
-    firefox-open-url-pattern "$pat" "$url"
+    google-chrome-open-url-pattern "$pat" "$url"
 else
-    firefox "$url"
+    google-chrome "$url"
 fi&
 if test "$EMACS" = t; then
     true

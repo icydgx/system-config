@@ -43,7 +43,6 @@ if test "$prompt"; then
 ###start of comment###
 "$prompt"
 # Local variables:
-# eval: (activate-input-method "sdim")
 # whitespace-cleanup-mode: nil
 # End:
 EOF

@@ -344,9 +344,9 @@ might be bad."
                         (if (boundp 'my-company-mail-regexp)
                             my-company-mail-regexp
                           "example.com")
-                    receivers
-                    (1- start-pos))
-                   (1- start-pos))
+                        receivers
+                        (1- start-pos))
+                       (1- start-pos))
           (setq all-marvell nil)))
 
       (when all-marvell
@@ -354,7 +354,7 @@ might be bad."
           (message-goto-from)
           (message-beginning-of-line)
           (kill-line)
-          (insert "\"Bao Haojun\" <" (shell-command-to-string "cat ~/.config/system-config/about_me/mail") ">")))
+          (insert "\"Ted Cruz\" <" (shell-command-to-string "cat ~/.config/system-config/about_me/mail") ">")))
 
       (save-excursion
         (message-goto-from)
@@ -362,7 +362,7 @@ might be bad."
         (when (save-excursion
                 (search-forward-regexp "@ask.com" (line-end-position) t))
           (kill-line)
-          (insert (completing-read "use account? " `(,(shell-command-to-string "cat ~/.config/system-config/about_me/mail") "baohaojun@gmail.com") nil t "baohaojun@gmail.com")))
+          (insert (completing-read "use account? " `(,(shell-command-to-string "cat ~/.config/system-config/about_me/mail") "mikhailcolesty@gmail.com") nil t "mikhailcolesty@gmail.com")))
         (message-goto-from)
         (message-beginning-of-line)
         (cond ((save-excursion
@@ -379,15 +379,15 @@ might be bad."
 
               ((save-excursion (search-forward-regexp "@gmail.com" (line-end-position) t))
                (kill-line)
-               (insert "\"Bao Haojun\" <baohaojun@gmail.com>")
+               (insert "\"Ted Cruz\" <mikhailcolesty@gmail.com>")
                (setq smtpmail-auth-credentials
                      '((bhj-gmail-host
                         465
-                        "baohaojun@gmail.com"
+                        "mikhailcolesty@gmail.com"
                         nil))
                      message-send-mail-function 'smtpmail-send-it
                      smtpmail-stream-type 'ssl
-                     user-mail-address "baohaojun@gmail.com"
+                     user-mail-address "mikhailcolesty@gmail.com"
                      smtpmail-default-smtp-server bhj-gmail-host
                      smtpmail-smtp-server bhj-gmail-host
                      smtpmail-smtp-service 465))

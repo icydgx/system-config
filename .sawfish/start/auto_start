@@ -1,0 +1,3 @@
+#!/bin/bash
+bhj-notify TITLE "Weclome ${USER} mastr"
+# anki

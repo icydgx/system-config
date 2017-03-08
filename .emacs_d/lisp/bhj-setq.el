@@ -136,7 +136,7 @@
                           (shell-command-to-string "cat ~/.config/system-config/about_me/FullName")
                           (shell-command-to-string "cat ~/.config/system-config/about_me/mail"))))
         (".*gmail.*"
-         ("From" "Bao Haojun <baohaojun@gmail.com>"))))
+         ("From" "Ted Cruz <mikhailcolesty@gmail.com>"))))
 
 (setq eclim-auto-save t)
 (setq ring-bell-function (lambda ()))

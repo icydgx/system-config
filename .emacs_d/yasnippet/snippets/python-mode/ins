@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: isinstance
+# key: i
+# --
+print(isinstance(${1:type}, ${2:int}))

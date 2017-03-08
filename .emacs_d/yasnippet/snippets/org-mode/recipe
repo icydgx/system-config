@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: recipe
+# key: recipe
+# --
+* ${1:recipe} [/]
+- [ ] ${2:ingredient}
+- [ ] ${3:ingredient}
+- [ ] ${4:ingredient}
+- [ ] ${5:ingredient}
+- [ ] ${6:ingredient}

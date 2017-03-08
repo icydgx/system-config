@@ -92,6 +92,7 @@ scd()
         cd "$(pwd | perl -npe '$x=""; s,('$basedir'/)(.*?)(/|$),$1 . "'$stem'/",e')"
     fi
 }
-if test "$USER" = bhj; then
-    export EMAIL=baohaojun@gmail.com
+if test "$USER" = czj; then
+    export EMAIL=mikhailcolesty@gmail.com
 fi
+export PATH="$PATH:$HOME/.config/composer/vendor/bin"
